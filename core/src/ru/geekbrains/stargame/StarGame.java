@@ -16,17 +16,17 @@ public class StarGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
-		region = new TextureRegion(img, 100, 100, 150, 150);
+		img = new Texture("TLOM0f.jpg");
+		region = new TextureRegion(img, 0, 0, 640, 480);
 	}
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(1, 0.4f, 0.6f, 1);
+		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
-		batch.draw(img, 100, 100);
-		batch.setColor(1, 0.33f, 0.4f, 0.7f);
+//		batch.draw(img, 100, 100);
+//		batch.setColor(1, 0.33f, 0.4f, 0.7f);
 		batch.draw(region, 0, 0);
 		batch.end();
 	}
